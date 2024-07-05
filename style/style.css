@@ -1,0 +1,129 @@
+ body{
+   background-color: black;
+   color: yellow;
+   overflow: hidden;
+ }
+ button{
+   border: 1px solid white;
+   border-radius: 5%;
+   padding: 5px;
+   background-color: orange;
+   margin: 10px 3px;
+   color: white;
+}
+.grid{
+    width: 560px;
+    height : 560px;
+    display: flex;
+    flex-wrap: wrap;   
+}
+ .grid div{
+    width: 20px;
+    height: 20px;
+ }
+ .border{
+    background-color: green;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+ }
+ .pac-dot{
+    background-color: purple;
+    border: 6px solid black;
+    box-sizing: border-box;
+
+ }
+ .pac-man{
+   background-image:url("../images/pacman.png");
+   background-size: cover;
+   background-repeat:"no-repeat";
+   width: 10px;
+   height:10px;
+   transform: none;
+   border: 0px;
+}
+.pac-man-up{
+  transform: rotate(-90deg);
+
+}
+.pac-man-down{
+  transform: rotate(90deg);
+
+}
+.pac-man-left{
+  transform: scaleX(-1);
+
+}
+.path-red{
+  background-color: rgb(235, 118, 118);  
+}
+.path-white{
+background-color: white;
+}
+.path-blue{
+  background-color: blueviolet;
+}
+.path-pink{
+  background-color: pink;
+}
+ .ghost{
+   border: 0px ;
+   background-color: transparent;
+   background-size: 20px;
+   background-repeat:"no-repeat";
+   width: 10px;
+   height:10px;
+   transform: none;
+ }
+ .red-ghost{
+   background-image:url("../images/arcade (1).png") ;
+ }
+ .green-ghost{
+   background-image:url("../images/arcade (2).png") ;
+ }
+ .greenish-ghost{
+   background-image:url("../images/arcade (5).png") ;
+ }
+ .purple-ghost{
+   background-image: url("../images/arcade (4).png");
+ }
+ .scared-ghost{
+ background-image: url("../images/arcade.png"); 
+}
+ .commands{
+    display: inline;
+    padding: 20px 30px;
+ }
+ .game-over{
+   background-image: url();
+ }
+
+ .powerUp {
+   border: 8px ;
+	background: purple;
+	border-radius: 50%;
+	margin: 0px;
+	height: 5px;
+	width: 5px;
+
+	box-shadow: 0 0 0 0 rgb(196, 194, 194);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(185, 183, 183, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(122, 120, 120, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(38, 2, 138, 0);
+	}
+}
